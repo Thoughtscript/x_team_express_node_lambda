@@ -1,4 +1,4 @@
-# x_team_express_node
+# x_team_express_node_lambda
 
 X-Team Express, AWS Lambda, and Node comparison example.
 

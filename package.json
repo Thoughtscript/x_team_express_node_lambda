@@ -24,6 +24,11 @@
   "devDependencies": {},
   "dependencies": {
     "aws-sdk": "=2.226.1",
-    "express": "=4.16.3"
+    "body-parser": "=1.18.2",
+    "cookie-parser": "=1.4.3",
+    "ejs": "=2.5.9",
+    "express": "=4.16.3",
+    "morgan": "=1.9.0",
+    "phantom": "^4.0.12"
   }
 }

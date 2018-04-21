@@ -1,0 +1,10 @@
+{
+  "method":  $input.json("method"),
+  "schema": $input.json("schema"),
+  "contact": {
+    "id": $input.json('contact.id'),
+    "name": $input.json('contact.name'),
+    "email": $input.json('contact.email'),
+    "telegram_id": $input.json('contact.telegram_id')
+  }
+}

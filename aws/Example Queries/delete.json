@@ -1,0 +1,7 @@
+{
+  "method":  "delete",
+  "schema": "contacts",
+  "contact": {
+    "id": 1
+  }
+}

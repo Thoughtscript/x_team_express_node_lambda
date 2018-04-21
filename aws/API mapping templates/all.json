@@ -1,0 +1,4 @@
+{
+  "method":  $input.json("method"),
+  "schema": $input.json("schema")
+}

@@ -1,0 +1,10 @@
+{
+  "method":  "put",
+  "schema": "contacts",
+  "contact": {
+    "id": 1,
+    "name": "Larry Dude",
+    "email": "1234@email.com",
+    "telegram_id": "@dudeperson"
+  }
+}

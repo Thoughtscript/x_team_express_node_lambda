@@ -1,0 +1,7 @@
+{
+  "method":  $input.json("method"),
+  "schema": $input.json("schema"),
+  "contact": {
+    "id": $input.json('contact.id')
+  }
+}

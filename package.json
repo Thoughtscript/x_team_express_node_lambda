@@ -1,0 +1,29 @@
+{
+  "name": "x_team_express_node_lambda",
+  "version": "1.0.0",
+  "description": "X-Team Express, Node, Lambda",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thoughtscript/x_team_express_node_lambda.git"
+  },
+  "engines": {
+    "node": "=8.10"
+  },
+  "keywords": [
+    "Express",
+    "Lambda",
+    "Node"
+  ],
+  "author": "Adam I. Gerard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thoughtscript/x_team_express_node_lambda/issues"
+  },
+  "homepage": "https://github.com/Thoughtscript/x_team_express_node_lambda#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "=2.226.1",
+    "express": "=4.16.3"
+  }
+}

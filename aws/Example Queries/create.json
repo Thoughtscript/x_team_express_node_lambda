@@ -1,0 +1,10 @@
+{
+  "method":  "post",
+  "schema": "contacts",
+  "contact": {
+    "id": 10,
+    "name": "Dev Man",
+    "email": "softwaare@dev.ment",
+    "telegram_id": "@mentat"
+  }
+}

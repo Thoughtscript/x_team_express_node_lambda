@@ -2,7 +2,9 @@
 
 X-Team Express, AWS Lambda, and Node comparison example.
 
-# Testing Specifics
+# Servers
+
+### Specs
 
 We'll use Node `8.10` since it's the most recent version useable and common to all three test scenarios:
 
@@ -20,8 +22,33 @@ We'll use Node `8.10` since it's the most recent version useable and common to a
 <a href="https://nodejs.org/en/download/releases/">Node 8.10</a>   
 <a href="https://www.npmjs.com/package/express">Express 4.16.3</a>   
 
-Each server contains the following base cases:
+### Node
 
+Start:
+```bash
+    $ npm run start-express
+    //available on 7777
+```
+http://localhost:7777/api:
+```json
+{"status":200,"data":[{"id":1,"name":"J Everyperson","email":"abcd@email.com","telegram_id":"@coolperson"},{"id":2,"name":"Larry Dude","email":"1234@email.com","telegram_id":"@dudeperson"},{"id":3,"name":"Ms. Ladyface","email":"efgh@email.com","telegram_id":"@ladyface"},{"id":4,"name":"J Nobody","email":"Nobody@email.com","telegram_id":"@Nobody"},{"id":5,"name":"Frankenstein","email":"monster@bash.com","telegram_id":"@monster"},{"id":6,"name":"Rockstar","email":"prima@donna.com","telegram_id":"@toocool"},{"id":7,"name":"beep boop","email":"imma@robot.com","telegram_id":"@robutnik"},{"id":8,"name":"Crazy Cat","email":"whiskers@chesire.com","telegram_id":"@meow"},{"id":9,"name":"The Red Devils","email":"market@garden.com","telegram_id":"@marketgarden"},{"id":10,"name":"Jar Jar Binks","email":"worst@character.ever","telegram_id":"@whatamievensaying"}]}
+```
+
+### Express
+
+Start:
+```bash
+    $ npm run start-node
+    //available on 8888
+```
+http://localhost:8888/api:
+```json
+{"status":200,"data":[{"id":1,"name":"J Everyperson","email":"abcd@email.com","telegram_id":"@coolperson"},{"id":2,"name":"Larry Dude","email":"1234@email.com","telegram_id":"@dudeperson"},{"id":3,"name":"Ms. Ladyface","email":"efgh@email.com","telegram_id":"@ladyface"},{"id":4,"name":"J Nobody","email":"Nobody@email.com","telegram_id":"@Nobody"},{"id":5,"name":"Frankenstein","email":"monster@bash.com","telegram_id":"@monster"},{"id":6,"name":"Rockstar","email":"prima@donna.com","telegram_id":"@toocool"},{"id":7,"name":"beep boop","email":"imma@robot.com","telegram_id":"@robutnik"},{"id":8,"name":"Crazy Cat","email":"whiskers@chesire.com","telegram_id":"@meow"},{"id":9,"name":"The Red Devils","email":"market@garden.com","telegram_id":"@marketgarden"},{"id":10,"name":"Jar Jar Binks","email":"worst@character.ever","telegram_id":"@whatamievensaying"}]}
+```
+
+# Testing Specifics
+
+Each server will be tested according to the following base cases:
 ```
     (1) Fetch One / Read One - REST GET
     (2) Fetch All / List - REST GET

@@ -9,8 +9,8 @@ module.exports = {
 
     const s = (require('http')).createServer((req, res)=> {
       const uri = (require('url')).parse(req.url).pathname;
-      require('../routes/mainController').createViewController(uri, req, res);
-      require('../routes/restApi').createApi(uri, req, res);
+      require('./viewcontroller').createViewController(uri, req, res);
+      require('./api').createApi(uri, req, res);
     });
 
     console.log('HTTP initialized!');

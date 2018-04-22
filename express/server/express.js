@@ -7,12 +7,13 @@
 const express = require('express'),
   app = express(),
   bodyParser = require('body-parser'),
-  c = config('../config.js')
+  c = require('../config.js'),
+  path = require('path')
 
 module.exports = {
   createServer: () => {
 
-    app.set('views', path.join(__dirname, '../..', c.public))
+    app.set('views', path.join(__dirname, '..', c.public))
       .engine('html', require('ejs').renderFile)
       .set('view engine', 'html')
 

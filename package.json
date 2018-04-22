@@ -2,7 +2,13 @@
   "name": "x_team_express_node_lambda",
   "version": "1.0.0",
   "description": "X-Team Express, Node, Lambda",
-  "scripts": {},
+  "scripts": {
+    "start-node": "node node/index.js",
+    "start-express": "node express/index.js",
+    "clear-servers-win": "Taskkill /IM node.exe /F",
+    "clear-servers-linux": "killall node",
+    "start-tests": "node test_suite/get.request.test.js && node test_suite/list.request.test.js && node test_suite/post.request.test.js && node test_suite/put.request.test.js && node test_suite/html.request.test.js && node test_suite/delete.request.test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Thoughtscript/x_team_express_node_lambda.git"

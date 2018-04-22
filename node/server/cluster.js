@@ -17,9 +17,9 @@ module.exports = {
         cluster.fork()
       }
       cluster.on('fork', worker => {
-        l.log(`Worker %d created: ${worker.id}`)
+        console.log(`Worker %d created: ${worker.id}`)
       }).on('exit', (worker) => {
-        l.log(`Worker %d died: ${worker.id}`)
+        console.error(`Worker %d died: ${worker.id}`)
         cluster.fork()
       })
     } else require('./http').createHttpServer(c.port)

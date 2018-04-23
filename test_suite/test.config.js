@@ -3,12 +3,19 @@
 module.exports = {
   //API endpoints
   api_endpoints: [
+    //AWS Gateway
     'https://ieer4zilwi.execute-api.us-west-2.amazonaws.com/Test/contacts',
+    //Pure Node
     'ec2-34-216-8-217.us-west-2.compute.amazonaws.com:7777/api',
+    //Pure Node Get One
     'ec2-34-216-8-217.us-west-2.compute.amazonaws.com:7777/api/one/?id=1',
+    //Express
     'ec2-34-216-8-217.us-west-2.compute.amazonaws.com:8888/api',
+    //Express Get One
     'ec2-34-216-8-217.us-west-2.compute.amazonaws.com:8888/api/one/?id=1',
+    //Pure Node Delete
     'ec2-34-216-8-217.us-west-2.compute.amazonaws.com:7777/api/?id=1',
+    //Express Delete
     'ec2-34-216-8-217.us-west-2.compute.amazonaws.com:8888/api/?id=1'
   ],
   //View endpoints

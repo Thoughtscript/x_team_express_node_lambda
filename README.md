@@ -63,6 +63,8 @@ Each server will be tested according to the following base cases:
     (6) Render View
 ```
 
+Each server will be hosted on AWS.
+
 Our aim will be to isolate our testing around the server API functionalities rather than data-layer and server interoperability since there are many variables that can modify our performance results.
 
 Instead, we'll use a preset array of ten (10) objects `data.json.js` for all CRUD-related operations.

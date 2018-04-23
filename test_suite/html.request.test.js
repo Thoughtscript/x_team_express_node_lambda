@@ -1,7 +1,7 @@
 'use strict'
 
 const request = require('request'),
-  e = require('./test.config').view_endpoints
+  c = require('./test.config').view_endpoints
 
 const before = () => new Promise((res, rej) => res(console.log('Tests setup!'))),
   after = () => {
@@ -31,9 +31,9 @@ requests = (testLabel, url, cycles) => {
 
 before().then(setupComplete => {
   console.log('HTML Page Load Tests Beginning!')
-  requests('aws', e[0], 1000).then(aws =>
-    requests('express', e[2], 1000).then(express =>
-      requests('purenode', e[1], 1000).then(purenode =>
+  requests('aws', c[0], 1000).then(aws =>
+    requests('express', c[2], 1000).then(express =>
+      requests('purenode', c[1], 1000).then(purenode =>
         after()
       )
     )

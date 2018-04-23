@@ -7,8 +7,8 @@
 module.exports = {
   createHttpServer: port => {
 
-    const s = (require('http')).createServer((req, res)=> {
-      const uri = (require('url')).parse(req.url).pathname;
+    const s = require('http').createServer((req, res)=> {
+      const uri = require('url').parse(req.url).pathname;
       require('./viewcontroller').createViewController(uri, req, res);
       require('./api').createApi(uri, req, res);
     });

@@ -10,5 +10,4 @@ exports.handler = async (event, context) => {
 
   response = await html
   return context.succeed(response)
-
 }

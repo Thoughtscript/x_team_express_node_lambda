@@ -1,7 +1,9 @@
 'use strict'
 
 const routes = require('./routes').api,
-  data = require('../../data.json')
+  data = require('../../data.json'),
+  u = require('url'),
+  q = require('querystring')
 
 module.exports = {
   createApi: async (url, req, res) => {
@@ -10,8 +12,7 @@ module.exports = {
     if (routes.indexOf(url) !== -1) {
       let reponseData
       res.setHeader('Content-type', 'application/json')
-
-      if (url === routes[0]) {
+      if (url === routes[0] || url === routes[1]) {
         switch (req.method) {
           //READ ALL
           case ('GET'):
@@ -21,24 +22,41 @@ module.exports = {
 
           //DELETE
           case ('DELETE'):
-            delete data[req.param.id]
+            const id = q.parse(u.parse(req.url).query)['id']
+            delete data[id]
             reponseData = await data
             res.write(JSON.stringify({status: 200, data: reponseData}))
             break
 
           //UPDATE
-          case ('UPDATE'):
-            data[req.param.contact.id] = req.param.contact
-            reponseData = await data
-            res.write(JSON.stringify({status: 200, data: reponseData}))
-            break
+          case ('PUT'):
+            return await new Promise((resolve, reject) => {
+              let bodyData = ''
+              req.on('data', postData => { bodyData += postData })
+              req.on('end', end => {
+                resolve(bodyData)
+              })
+            }).then(body => {
+              const con = JSON.parse(body).contact
+              data[con['id']] = con
+              res.write(JSON.stringify({status: 200, data: data}))
+              res.end()
+            })
 
           //CREATE
-          case ('CREATE'):
-            data[req.param.contact.id] = req.param.contact
-            reponseData = await data
-            res.write(JSON.stringify({status: 200, data: reponseData}))
-            break
+          case ('POST'):
+            return await new Promise((resolve, reject) => {
+              let bodyData = ''
+              req.on('data', postData => { bodyData += postData })
+              req.on('end', end => {
+                resolve(bodyData)
+              })
+            }).then(body => {
+              const con = JSON.parse(body).contact
+              data[con['id']] = con
+              res.write(JSON.stringify({status: 200, data: data}))
+              res.end()
+            })
 
           //READ ALL
           default:
@@ -47,11 +65,14 @@ module.exports = {
             break
         }
 
-      } else if (url === routes[1]) {
+      } else if (url === routes[2] || url === routes[3]) {
+
         //GET ONE
-        reponseData = await data[req.param.id]
+        const id = q.parse(u.parse(req.url).query)['id']
+        reponseData = await data[id]
         res.write(JSON.stringify({status: 200, data: reponseData}))
       }
+
       res.statusCode = 200
       res.end()
     }

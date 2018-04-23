@@ -1,5 +1,5 @@
 {
-  "method":  "delete",
+  "method":  "get",
   "schema": "contacts",
   "contact": {
     "id": 1

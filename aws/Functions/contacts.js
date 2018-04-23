@@ -1,4 +1,4 @@
-const data = [
+let data = [
   {
     id: 0,
     name: 'J Everyperson',
@@ -64,35 +64,32 @@ const data = [
 exports.handler = async (event, context) => {
   let response;
 
-  console.log(`Lambda Contacts Schema API ... Event Received!`)
+  console.log(`Lambda Contacts Schema API ... Event Received! ${event.method.toUpperCase()}`)
 
-  switch (event.method) {
+  switch (event.method.toUpperCase()) {
     case 'LIST':
+      //console.log("LIST: " + JSON.stringify(event))
       response = await data
       return context.succeed(response)
     case 'GET':
-      return async () => {
-        let response = await data[event.contact.id]
-        return context.succeed(response)
-      }
+      //console.log("GET: " + JSON.stringify(event))
+      response = await data[event.contact.id]
+      return context.succeed(response)
     case 'POST':
-      return async () => {
-        data[data.length] = event.contact
-        let response = await data
-        return context.succeed(response)
-      }
+      //console.log("POST: " + JSON.stringify(event))
+      data[data.length] = event.contact
+      response = await data
+      return context.succeed(response)
     case 'PUT':
-      return async () => {
-        data[event.contact.id] = event.contact
-        response = await data
-        return context.succeed(response)
-      }
+      console.log("PUT: " + JSON.stringify(event))
+      data[event.contact.id] = event.contact
+      response = await data
+      return context.succeed(response)
     case 'DELETE':
-      return async () => {
-        delete data[event.contact.id]
-        response = await data
-        return context.succeed(response)
-      }
+      //console.log("DELETE: " + JSON.stringify(event))
+      delete data[event.contact.id]
+      response = await data
+      return context.succeed(response)
     default:
       response = await data
       return context.succeed(response)

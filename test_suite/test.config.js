@@ -10,5 +10,17 @@ module.exports = {
     "https://ieer4zilwi.execute-api.us-west-2.amazonaws.com/Test/views",
     "http://localhost:7777",
     "http://localhost:8888"
-  ]
+  ],
+  post: {
+    id: 10,
+    name: 'Daisy Dog',
+    email: 'dog@canine.com',
+    telegram_id: '@woof'
+  },
+  put: {
+    id: 8,
+    name: 'Daisy Dog',
+    email: 'dog@canine.com',
+    telegram_id: '@woof'
+  }
 }

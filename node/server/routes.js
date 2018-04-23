@@ -1,4 +1,4 @@
 module.exports = {
-  views: ['/'],
+  views: ['/', ''],
   api: ['/api']
 }

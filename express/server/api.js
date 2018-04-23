@@ -9,7 +9,6 @@ const express = require('express'),
   data = require('../../data.json')
 
 publicapi
-
   .get("/", async (req, res) => {
     let reponseData = await data
     return res.send({status: 200, data: reponseData});

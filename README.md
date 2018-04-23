@@ -4,6 +4,8 @@ X-Team Express, AWS Lambda, and Node comparison example.
 
 # Servers
 
+***(Please note that all credentials contained herein were used for testing purposes only and represent example URL's - they are not production nor live URL's)***
+
 ### Specs
 
 We'll use Node `8.10` since it's the most recent version useable and common to all three test scenarios:

@@ -50,16 +50,22 @@ API:
 ```
     //AWS Gateway
     https://[GATEWAY].execute-api.us-west-2.amazonaws.com/Test/contacts
+
     //Pure Node
     localhost:7777/api
+
     //Pure Node Get One
     localhost:7777/api/one/?id=1
+
     //Express
     localhost:8888/api
+
     //Express Get One
     localhost:8888/api/one/?id=1
+
     //Pure Node Delete
     localhost:7777/api/?id=1
+
     //Express Delete
     localhost:8888/api/?id=1
 ```
@@ -77,40 +83,40 @@ Views:
 
 <table>
     <thead>
-        <th>
-            <tr>Server</tr>
-            <tr>Operation</tr>
-            <tr>First Run</tr>
-            <tr>Second Run</tr>
-            <tr>Third Run</tr>
-            <tr>Avg</tr>
-        </th>
+        <tr>
+            <th>Server</th>
+            <th>Operation</th>
+            <th>First Run</th>
+            <th>Second Run</th>
+            <th>Third Run</th>
+            <th>Avg</th>
+        </tr>
     </thead>
     <tbody>
-        <th>
-            <tr>AWS</tr>
-            <tr>GET ONE</tr>
-            <tr>369 ms</tr>
-            <tr>138 ms</tr>
-            <tr>329 ms</tr>
-            <tr>278.66 avg ms</tr>
-        </th>
-        <th>
-            <tr>Express</tr>
-            <tr>GET ONE</tr>
-            <tr>382 ms</tr>
-            <tr>118 ms</tr>
-            <tr>272</tr>
-            <tr>257.33 avg ms</tr>
-         </th>
-         <th>
-             <tr>Pure Node</tr>
-             <tr>GET ONE</tr>
-             <tr>360 ms</tr>
-             <tr>118 ms</tr>
-             <tr>290 ms</tr>
-             <tr>256 avg ms</tr>
-         </th>
+        <tr>
+            <th>AWS</th>
+            <th>GET ONE</th>
+            <th>369 ms</th>
+            <th>138 ms</th>
+            <th>329 ms</th>
+            <th>278.66 avg ms</th>
+        </tr>
+        <tr>
+            <tr>Express</th>
+            <th>GET ONE</th>
+            <th>382 ms</th>
+            <th>118 ms</th>
+            <th>272</th>
+            <th>257.33 avg ms</th>
+         </tr>
+         <tr>
+             <th>Pure Node</th>
+             <th>GET ONE</th>
+             <th>360 ms</th>
+             <th>118 ms</th>
+             <th>290 ms</th>
+             <th>256 avg ms</th>
+         </tr>
     </tbody>
 </table>
 
@@ -118,40 +124,40 @@ Views:
 
 <table>
     <thead>
-        <th>
-            <tr>Server</tr>
-            <tr>Operation</tr>
-            <tr>First Run</tr>
-            <tr>Second Run</tr>
-            <tr>Third Run</tr>
-            <tr>Avg</tr>
-        </th>
+        <tr>
+            <th>Server</th>
+            <th>Operation</th>
+            <th>First Run</th>
+            <th>Second Run</th>
+            <th>Third Run</th>
+            <th>Avg</th>
+        </tr>
     </thead>
     <tbody>
-        <th>
-            <tr>AWS</tr>
-            <tr>GET ALL</tr>
-            <tr>12916 ms</tr>
-            <tr>10574 ms</tr>
-            <tr>12511 ms</tr>
-            <tr>12,000 avg ms</tr>
-        </th>
-        <th>
-            <tr>Express</tr>
-            <tr>GET ALL</tr>
-            <tr>141 ms</tr>
-            <tr>239 ms</tr>
-            <tr>274</tr>
-            <tr>218 avg ms</tr>
-         </th>
-         <th>
-             <tr>Pure Node</tr>
-             <tr>GET ALL</tr>
-             <tr>102 ms</tr>
-             <tr>205 ms</tr>
-             <tr>199 ms</tr>
-             <tr>168.66 avg ms</tr>
-         </th>
+        <tr>
+            <th>AWS</th>
+            <th>GET ALL</th>
+            <th>12916 ms</th>
+            <th>10574 ms</th>
+            <th>12511 ms</th>
+            <th>12,000 avg ms</th>
+        </tr>
+        <tr>
+            <th>Express</th>
+            <th>GET ALL</th>
+            <th>141 ms</th>
+            <th>239 ms</th>
+            <th>274</th>
+            <th>218 avg ms</th>
+         </tr>
+         <tr>
+             <th>Pure Node</th>
+             <th>GET ALL</th>
+             <th>102 ms</th>
+             <th>205 ms</th>
+             <th>199 ms</th>
+             <th>168.66 avg ms</th>
+         </tr>
     </tbody>
 </table>
 
@@ -159,40 +165,40 @@ Views:
 
 <table>
     <thead>
-        <th>
-            <tr>Server</tr>
-            <tr>Operation</tr>
-            <tr>First Run</tr>
-            <tr>Second Run</tr>
-            <tr>Third Run</tr>
-            <tr>Avg</tr>
-        </th>
+        <tr>
+            <th>Server</th>
+            <th>Operation</th>
+            <th>First Run</th>
+            <th>Second Run</th>
+            <th>Third Run</th>
+            <th>Avg</th>
+        </tr>
     </thead>
     <tbody>
-        <th>
-            <tr>AWS</tr>
-            <tr>POST</tr>
-            <tr>228 ms</tr>
-            <tr>234 ms</tr>
-            <tr>367 ms</tr>
-            <tr>276.33 avg ms</tr>
-        </th>
-        <th>
-            <tr>Express</tr>
-            <tr>POST</tr>
-            <tr>227 ms</tr>
-            <tr>214 ms</tr>
-            <tr>290</tr>
-            <tr>243.66 avg ms</tr>
-         </th>
-         <th>
-             <tr>Pure Node</tr>
-             <tr>POST</tr>
-             <tr>201 ms</tr>
-             <tr>196 ms</tr>
-             <tr>304 ms</tr>
-             <tr>233.66 avg ms</tr>
-         </th>
+        <tr>
+            <th>AWS</th>
+            <th>POST</th>
+            <th>228 ms</th>
+            <th>234 ms</th>
+            <th>367 ms</th>
+            <th>276.33 avg ms</th>
+        </tr>
+        <tr>
+            <th>Express</th>
+            <th>POST</th>
+            <th>227 ms</th>
+            <th>214 ms</th>
+            <th>290</th>
+            <th>243.66 avg ms</th>
+         </tr>
+         <tr>
+             <th>Pure Node</th>
+             <th>POST</th>
+             <th>201 ms</th>
+             <th>196 ms</th>
+             <th>304 ms</th>
+             <th>233.66 avg ms</th>
+         </tr>
     </tbody>
 </table>
 
@@ -200,40 +206,40 @@ Views:
 
 <table>
     <thead>
-        <th>
-            <tr>Server</tr>
-            <tr>Operation</tr>
-            <tr>First Run</tr>
-            <tr>Second Run</tr>
-            <tr>Third Run</tr>
-            <tr>Avg</tr>
-        </th>
+        <tr>
+            <th>Server</th>
+            <th>Operation</th>
+            <th>First Run</th>
+            <th>Second Run</th>
+            <th>Third Run</th>
+            <th>Avg</th>
+        </tr>
     </thead>
     <tbody>
-        <th>
-            <tr>AWS</tr>
-            <tr>PUT</tr>
-            <tr>163 ms</tr>
-            <tr>278 ms</tr>
-            <tr>345 ms</tr>
-            <tr>262 avg ms</tr>
-        </th>
-        <th>
-            <tr>Express</tr>
-            <tr>PUT</tr>
-            <tr>118 ms</tr>
-            <tr>272 ms</tr>
-            <tr>306</tr>
-            <tr>232 avg ms</tr>
-         </th>
-         <th>
-             <tr>Pure Node</tr>
-             <tr>PUT</tr>
-             <tr>127 ms</tr>
-             <tr>292 ms</tr>
-             <tr>306 ms</tr>
-             <tr>241.66 avg ms</tr>
-         </th>
+        <tr>
+            <th>AWS</th>
+            <th>PUT</th>
+            <th>163 ms</th>
+            <th>278 ms</th>
+            <th>345 ms</th>
+            <th>262 avg ms</th>
+        </tr>
+        <tr>
+            <th>Express</th>
+            <th>PUT</th>
+            <th>118 ms</th>
+            <th>272 ms</th>
+            <th>306</th>
+            <th>232 avg ms</th>
+         </tr>
+         <tr>
+             <th>Pure Node</th>
+             <th>PUT</th>
+             <th>127 ms</th>
+             <th>292 ms</th>
+             <th>306 ms</th>
+             <th>241.66 avg ms</th>
+         </tr>
     </tbody>
 </table>
 
@@ -241,40 +247,40 @@ Views:
 
 <table>
     <thead>
-        <th>
-            <tr>Server</tr>
-            <tr>Operation</tr>
-            <tr>First Run</tr>
-            <tr>Second Run</tr>
-            <tr>Third Run</tr>
-            <tr>Avg</tr>
-        </th>
+        <tr>
+            <th>Server</th>
+            <th>Operation</th>
+            <th>First Run</th>
+            <th>Second Run</th>
+            <th>Third Run</th>
+            <th>Avg</th>
+        </tr>
     </thead>
     <tbody>
-        <th>
-            <tr>AWS</tr>
-            <tr>HTML</tr>
-            <tr>12774 ms</tr>
-            <tr>12230 ms</tr>
-            <tr>15170 ms</tr>
-            <tr>13391 avg ms</tr>
-        </th>
-        <th>
-            <tr>Express</tr>
-            <tr>HTML</tr>
-            <tr>340 ms</tr>
-            <tr>82 ms</tr>
-            <tr>223</tr>
-            <tr>215 avg ms</tr>
-         </th>
-         <th>
-             <tr>Pure Node</tr>
-             <tr>HTML</tr>
-             <tr>341 ms</tr>
-             <tr>79 ms</tr>
-             <tr>231 ms</tr>
-             <tr>217 avg ms</tr>
-         </th>
+        <tr>
+            <th>AWS</th>
+            <th>HTML</th>
+            <th>12774 ms</th>
+            <th>12230 ms</th>
+            <th>15170 ms</th>
+            <th>13391 avg ms</th>
+        </tr>
+        <tr>
+            <th>Express</th>
+            <th>HTML</th>
+            <th>340 ms</th>
+            <th>82 ms</th>
+            <th>223</th>
+            <th>215 avg ms</th>
+         </tr>
+         <tr>
+             <th>Pure Node</th>
+             <th>HTML</th>
+             <th>341 ms</th>
+             <th>79 ms</th>
+             <th>231 ms</th>
+             <th>217 avg ms</th>
+         </tr>
     </tbody>
 </table>
 
@@ -282,45 +288,44 @@ Views:
 
 <table>
     <thead>
-        <th>
-            <tr>Server</tr>
-            <tr>Operation</tr>
-            <tr>First Run</tr>
-            <tr>Second Run</tr>
-            <tr>Third Run</tr>
-            <tr>Avg</tr>
-        </th>
+        <tr>
+            <th>Server</th>
+            <th>Operation</th>
+            <th>First Run</th>
+            <th>Second Run</th>
+            <th>Third Run</th>
+            <th>Avg</th>
+        </tr>
     </thead>
     <tbody>
-        <th>
-            <tr>AWS</tr>
-            <tr>DELETE</tr>
-            <tr>383 ms</tr>
-            <tr>130 ms</tr>
-            <tr>351 ms</tr>
-            <tr>288 avg ms</tr>
-        </th>
-        <th>
-            <tr>Express</tr>
-            <tr>DELETE</tr>
-            <tr>258 ms</tr>
-            <tr>114 ms</tr>
-            <tr>231</tr>
-            <tr>201 avg ms</tr>
-         </th>
-         <th>
-             <tr>Pure Node</tr>
-             <tr>DELETE</tr>
-             <tr>283 ms</tr>
-             <tr>96 ms</tr>
-             <tr>325 ms</tr>
-             <tr>234.66 avg ms</tr>
-         </th>
+        <tr>
+            <th>AWS</th>
+            <th>DELETE</th>
+            <th>383 ms</th>
+            <th>130 ms</th>
+            <th>351 ms</th>
+            <th>288 avg ms</th>
+        </tr>
+        <tr>
+            <th>Express</th>
+            <th>DELETE</th>
+            <th>258 ms</th>
+            <th>114 ms</th>
+            <th>231</th>
+            <th>201 avg ms</th>
+         </tr>
+         <tr>
+             <th>Pure Node</th>
+             <th>DELETE</th>
+             <th>283 ms</th>
+             <th>96 ms</th>
+             <th>325 ms</th>
+             <th>234.66 avg ms</th>
+         </tr>
     </tbody>
 </table>
 
 **Winner:** Express (201 avg ms)
-
 
 # Testing Specifics
 

@@ -102,7 +102,7 @@ Views:
             <th>278.66 avg ms</th>
         </tr>
         <tr>
-            <tr>Express</th>
+            <th>Express</th>
             <th>GET ONE</th>
             <th>382 ms</th>
             <th>118 ms</th>

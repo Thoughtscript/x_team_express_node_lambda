@@ -24,6 +24,12 @@ We'll use Node `8.10` since it's the most recent version useable and common to a
 <a href="https://nodejs.org/en/download/releases/">Node 8.10</a>   
 <a href="https://www.npmjs.com/package/express">Express 4.16.3</a>   
 
+Specifically, I was using the following AWS specifications:
+
+(1) AWS Lambda - <a href="https://aws.amazon.com/about-aws/whats-new/2018/04/aws-lambda-supports-nodejs/">Apr 2, 2018</a> - specified further here: <a href="https://docs.aws.amazon.com/lambda/latest/dg/programming-model.html">Node Programming Models</a>  
+
+(2) EC2 instances for Node and Express servers - Ubuntu Server 14.04 LTS (HVM), SSD Volume Type - ami-a523b4dd - t2.micro instance  
+
 ### Node
 
 Start:

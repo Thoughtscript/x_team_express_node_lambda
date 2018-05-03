@@ -24,7 +24,7 @@ We'll use Node `8.10` since it's the most recent version useable and common to a
 <a href="https://nodejs.org/en/download/releases/">Node 8.10</a>   
 <a href="https://www.npmjs.com/package/express">Express 4.16.3</a>   
 
-Specifically, I was using the following AWS specifications:
+I was using the following AWS specifications:
 
 (1) AWS Lambda - <a href="https://aws.amazon.com/about-aws/whats-new/2018/04/aws-lambda-supports-nodejs/">Apr 2, 2018</a> - specified further here: <a href="https://docs.aws.amazon.com/lambda/latest/dg/programming-model.html">Node Programming Models</a>  
 
@@ -82,6 +82,8 @@ Views:
     localhost:7777
     localhost:8888
 ```
+
+(Please note that the `id` of the query matches the index of the data array and not the `id` of the object - for testing purposes that was irrelevant but in retrospect it would have been nice to change the `id` attribute to something like `uuid` to avoid confusion)
 
 ### Results
 
